@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 1rem;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #F1F5F8;
+    font-family: monospace;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgb(103, 103, 42);
+}
+
+h4,
+h2 {
+    font-weight: 800;
+    text-align: center;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+ul {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(103, 103, 42);
+}
+
+.nav-center {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #FFF;
+    box-shadow: 0 2px 0 rgba(0,0,0,0.6);
+    z-index: 2;
+}
+
+.nav-logo {
+    padding: 1.2em;
+}
+
+.nav-links {
+    display: flex;
+    margin-right: 2rem;
+}
+
+.nav-links a {
+    display: block;
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.nav-links a:hover {
+    background: #FF0000;
+}
+
+main {
+    min-height: calc(100vh - 3rem);
+    display: grid;
+    place-items: center;
+  }
+  .container {
+    text-align: center;
+  }
+  .container h2 {
+    background: black;
+    text-transform: uppercase;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 2.5rem;
+  }
+  .color {
+    color: #1080D1;
+  }
+  .btn-hero {
+    font-family: monospace;
+    text-transform: uppercase;
+    background: transparent;
+    color: black;
+    letter-spacing: .1rem;
+    display: inline-block;
+    font-weight: 700;
+    transition: all 0.3s linear;;
+    border: 2px solid black;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    font-size: 1rem;
+    padding: 0.75rem 1.25rem;
+  }
+  .btn-hero:hover {
+    color: white;
+    background: black;
+  }
