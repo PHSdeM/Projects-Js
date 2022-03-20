@@ -1,4 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/348e7919-4b70-4f62-8ddd-9ce272a5c260/deploy-status)]
+![Netlify Status](https://api.netlify.com/api/v1/badges/348e7919-4b70-4f62-8ddd-9ce272a5c260/deploy-status)
 
 # Projects-JavaScript
 This repository contains several functions for web development.
