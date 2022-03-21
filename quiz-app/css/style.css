@@ -40,6 +40,10 @@ body {
     margin: 0;
 }
 
+:required {
+    background: red;
+}
+
 h1,
 h2,
 h3,

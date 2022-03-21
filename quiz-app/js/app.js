@@ -1,6 +1,9 @@
 var answers = {}
 var tamanho = document.getElementsByClassName('question').length;
 
+undefined = 0;
+
+
 var question_one = document.getElementById('question-1')
 var question_two = document.getElementById('question-2')
 var question_three = document.getElementById('question-3')
@@ -29,21 +32,23 @@ question_five.addEventListener('click', function(event){
     storeAnswer(5, event)
 })
 function totalScore(){
-    var total_score = 0;
-
-    return total_score += answers.question1+
+   var total_score = answers.question1+
     answers.question2+
     answers.question3+
     answers.question4+ 
-    answers.question5;
+    answers.question5
 
+    return total_score || 0
 }
+
 
 function getInfoBasedOnScore(){
     if(totalScore() < 3 ){
         var score_info = "You need to get better!"
     } else if(totalScore() > 3){
         var score_info = "Congratulations!!!!!!!!!!!"
+    }else{
+        var score_info = 'Practice more!!!!!!'
     }
     return score_info
 }
@@ -64,6 +69,7 @@ function nextQuestion(question_number){
 
     el.style.display = "block"
     el2.style.display = "none"
+
 }
 
 submit1.addEventListener('click', function(){
@@ -144,4 +150,7 @@ function growProgressBar(percentage_width){
 }
 
 
-
+// function myFunction() {
+//     var x = document.getElementsByName("favelang1").required;
+//     document.getElementById("alert").innerHTML = x;
+//   }
