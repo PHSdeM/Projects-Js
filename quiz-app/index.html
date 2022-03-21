@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz APP</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="test-name column">
+                    <h2>Test</h2>
+
+                    <div id="progress_bar"></div>
+                    <form class="questions_box">
+
+                        <div class= 'question' id="question-1">
+                                <h2>Question 1</h2>
+                                <h3>Sobre HTML, é correto afirmar:</h3>
+                                <input type="radio" id="question-1-answer-a" name="favelang" value="0"> É uma linguagem apenas de marcação, sem nenhum tipo de efeito visual.<br>
+                                <input type="radio" id="question-1-answer-b" name="favelang" value="1"> HTML significa HyperText Markup Language, trata-se de uma linguagem de marcação utilizada na construcao de paginas Web <br>
+                                <input type="radio" id="question-1-answer-c" name="favelang" value="0"> É uma linguagem potente, onde podemos criar scripts, efeitos visuais em o auxilio de outra liguagem. <br>
+                                <input type="radio" id="question-1-answer-d" name="favelang" value="0"> Nenhuma das alternativas<br>
+                                <div id="submit1" class="button">Submit</div>
+                            <div class="clearfix"></div>
+                        </div>
+
+                    <div class= 'question' id="question-2">
+                            <h2>Question 2</h2>
+                            <h3>Sobre CSS, é correto afirmar:</h3>
+                            <input type="radio" id="question-2-answer-a" name="favelang" value="1"> Controla o layout, posicionar e modificar elementos HTML e agrupar elementos que possam receber a mesma formatação.<br>
+                            <input type="radio" id="question-2-answer-b" name="favelang" value="0"> Realizar a marcação dos elementos semânticos, sem se preocupar com o design da página.<br>
+                            <input type="radio" id="question-2-answer-c" name="favelang" value="0"> Entre as suas funções, podemos citar: realizar a marcação dos elementos na página e inserir elementos (imagens, texto, links, etc). <br>
+                            <input type="radio" id="question-2-answer-d" name="favelang" value="0"> Surgiu em 1990 para solucionar problemas semânticos. <br>
+                            <div id="submit2" class="button">Submit</div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <div class= 'question' id="question-3">
+                            <h2>Question 3</h2>
+                            <h3>Assinale a alternativa que representa a forma correta para declaração de uma variável em JavaScript.</h3>
+                            <input type="radio" id="question-3-answer-a" name="favelang" value="1"> <code>var a = 2 </code><br>
+                            <input type="radio" id="question-3-answer-b" name="favelang" value="0"> <code>var = a </code><br>
+                            <input type="radio" id="question-3-answer-c" name="favelang" value="0"> <code>var a = 2 inteiros</code><br>
+                            <input type="radio" id="question-3-answer-d" name="favelang" value="0"> Nenhuma das alternativas<br>
+                            <div id="submit3" class="button">Submit</div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <div class= 'question'  id="question-4">
+                        <h2>Question 4</h2>
+                        <h3>A forma correta de declarar uma regra CSS é a seguinte:</h3>
+                        <input type="radio" id="question-4-answer-a" name="favelang" value="0"> seletor{valor>propriedade} <br>
+                        <input type="radio" id="question-4-answer-b" name="favelang" value="1"> seletor{propriedade:valor;} <br>
+                        <input type="radio" id="question-4-answer-c" name="favelang" value="0"> Nenhuma das alternativas <br>
+                        <input type="radio" id="question-4-answer-d" name="favelang" value="0"> seletor{propriedade = valor} <br>
+                        <div id="submit4" class="button">Submit</div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class= 'question' id="question-5">
+                    <h2>Question 5</h2>
+                    <h3>Para criar uma lista “dropdown”, utilizamos as tags <__________> e <__________>.?</h3>
+                    <input type="radio" id="question-5-answer-a" name="favelang" value="1"> select e option <br>
+                    <input type="radio" id="question-5-answer-b" name="favelang" value="0"> select e legend <br>
+                    <input type="radio" id="question-5-answer-c" name="favelang" value="0"> legend e select <br>
+                    <input type="radio" id="question-5-answer-d" name="favelang" value="0"> select e dropdown <br>
+                    <div id="submit5" class="button">Submit</div>
+                <div class="clearfix"></div>
+            </div>
+
+                <div id="question-6">
+                    <h2>Thank You for answer an questions</h2>
+                    <h3>Your score: </h3>
+                    <h1 id="printtotalscore"> </h1>
+                    <p id="printscoreinfo"></p>
+                </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <aside>
+        <div class="aside-center">
+            <h3>Questions</h3>
+
+            <h4 class="text-left">1- <span id="quest-1"></span></h4>
+            <h4 class="text-left">2- <span id="quest-2"></span></h4>
+            <h4 class="text-left">3- <span id="quest-3"></span></h4>
+            <h4 class="text-left">4- <span id="quest-4"></span></h4>
+            <h4 class="text-left">5- <span id="quest-5"></span></h4>
+        </div>
+        
+        
+    </aside>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
