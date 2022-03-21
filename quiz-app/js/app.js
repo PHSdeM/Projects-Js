@@ -1,8 +1,7 @@
 var answers = {}
-var tamanho = document.getElementsByClassName('question').length;
+var tamanho = document.getElementsByClassName('question').length
 
-undefined = 0;
-
+var messageError = document.getElementById('message-error')
 
 var question_one = document.getElementById('question-1')
 var question_two = document.getElementById('question-2')
@@ -73,69 +72,101 @@ function nextQuestion(question_number){
 }
 
 submit1.addEventListener('click', function(){
-    nextQuestion(2)
-    growProgressBar('40%')
-    if(answers.question1 === 1){
-        document.getElementById('quest-1').innerHTML = 'correct'
-        var el = document.getElementById('quest-1')
-        el.style.color = 'green'
+    if((document.querySelectorAll('input[class="question-1"]:checked').length === 0)){
+        messageError.innerHTML = `<li> Por favor, selecione uma opcao</li>`
+        messageError.style.display = 'block'
     }else{
-        document.getElementById('quest-1').innerHTML = 'incorrect'
-        var el = document.getElementById('quest-1')
-        el.style.color = 'red'
+        nextQuestion(2)
+        growProgressBar('40%')
+        if(answers.question1 === 1){
+            document.getElementById('quest-1').innerHTML = 'correct'
+            var el = document.getElementById('quest-1')
+            el.style.color = 'green'
+        }else{
+            document.getElementById('quest-1').innerHTML = 'incorrect'
+            var el = document.getElementById('quest-1')
+            el.style.color = 'red'
+        }
+        messageError.style.display = 'none'
     }
-    
 })
 submit2.addEventListener('click', function(){
-    nextQuestion(3)
-    growProgressBar('60%')
-    if(answers.question2 === 1){
-        document.getElementById('quest-2').innerHTML = 'correct'
-        var el = document.getElementById('quest-2')
-        el.style.color = 'green'
+    if((document.querySelectorAll('input[class="question-2"]:checked').length === 0)){
+        messageError.innerHTML = `<li> Por favor, selecione uma opcao</li>`
+        messageError.style.display = 'block'
     }else{
-        document.getElementById('quest-2').innerHTML = 'incorrect'
-        var el = document.getElementById('quest-2')
-        el.style.color = 'red'
+        nextQuestion(3)
+        growProgressBar('60%')
+        if(answers.question2 === 1){
+            document.getElementById('quest-2').innerHTML = 'correct'
+            var el = document.getElementById('quest-2')
+            el.style.color = 'green'
+        }else{
+            document.getElementById('quest-2').innerHTML = 'incorrect'
+            var el = document.getElementById('quest-2')
+            el.style.color = 'red'
+        }
+        messageError.style.display = 'none'
     }
 })
 submit3.addEventListener('click', function(){
-    nextQuestion(4)
-    growProgressBar('80%')
-    if(answers.question3 === 1){
-        document.getElementById('quest-3').innerHTML = 'correct'
-        var el = document.getElementById('quest-3')
-        el.style.color = 'green'
-    }else{
-        document.getElementById('quest-3').innerHTML = 'incorrect'
-        var el = document.getElementById('quest-3')
-        el.style.color = 'red'
+    messageError.style.display = 'none'
+    if((document.querySelectorAll('input[class="question-3"]:checked').length === 0)){
+        messageError.innerHTML = `<li> Por favor, selecione uma opcao</li>`
+        messageError.style.display = 'block'
+    }else {
+        nextQuestion(4)
+        growProgressBar('80%')
+        if(answers.question3 === 1){
+            document.getElementById('quest-3').innerHTML = 'correct'
+            var el = document.getElementById('quest-3')
+            el.style.color = 'green'
+        }else{
+            document.getElementById('quest-3').innerHTML = 'incorrect'
+            var el = document.getElementById('quest-3')
+            el.style.color = 'red'
+        }
+        messageError.style.display = 'none'
     }
 })
 submit4.addEventListener('click', function(){
-    nextQuestion(5)
-    growProgressBar('90%')
-    if(answers.question4 === 1){
-        document.getElementById('quest-4').innerHTML = 'correct'
-        var el = document.getElementById('quest-4')
-        el.style.color = 'green'
+    messageError.style.display = 'none'
+    if((document.querySelectorAll('input[class="question-4"]:checked').length === 0)){
+        messageError.innerHTML = `<li> Por favor, selecione uma opcao</li>`
+        messageError.style.display = 'block'
     }else{
-        document.getElementById('quest-4').innerHTML = 'incorrect'
-        var el = document.getElementById('quest-4')
-        el.style.color = 'red'
+        nextQuestion(5)
+        growProgressBar('90%')
+        if(answers.question4 === 1){
+            document.getElementById('quest-4').innerHTML = 'correct'
+            var el = document.getElementById('quest-4')
+            el.style.color = 'green'
+        }else{
+            document.getElementById('quest-4').innerHTML = 'incorrect'
+            var el = document.getElementById('quest-4')
+            el.style.color = 'red'
+        }
+        messageError.style.display = 'none'
     }
 })
 submit5.addEventListener('click', function(){
-    nextQuestion(6);
-    growProgressBar('100%');
-    if(answers.question5 === 1){
-        document.getElementById('quest-5').innerHTML = 'correct'
-        var el = document.getElementById('quest-5')
-        el.style.color = 'green'
+    messageError.style.display = 'none'
+    if((document.querySelectorAll('input[class="question-5"]:checked').length === 0)){
+        messageError.innerHTML = `<li> Por favor, selecione uma opcao</li>`
+        messageError.style.display = 'block'
     }else{
-        document.getElementById('quest-5').innerHTML = 'incorrect'
-        var el = document.getElementById('quest-5')
-        el.style.color = 'red'
+        nextQuestion(6);
+        growProgressBar('100%');
+        if(answers.question5 === 1){
+            document.getElementById('quest-5').innerHTML = 'correct'
+            var el = document.getElementById('quest-5')
+            el.style.color = 'green'
+        }else{
+            document.getElementById('quest-5').innerHTML = 'incorrect'
+            var el = document.getElementById('quest-5')
+            el.style.color = 'red'
+        }
+        messageError.style.display = 'none'
     }
 })
 submit5.addEventListener('click', function(){
@@ -148,9 +179,3 @@ function growProgressBar(percentage_width){
     var bar = document.getElementById('progress_bar')
     bar.style.width = percentage_width
 }
-
-
-// function myFunction() {
-//     var x = document.getElementsByName("favelang1").required;
-//     document.getElementById("alert").innerHTML = x;
-//   }
