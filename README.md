@@ -12,4 +12,4 @@ Inside the project folder, there are the codes and several files present in the 
 
  - [color-background-generator.netlify.app](https://color-background-generator.netlify.app/)
  - [counter-numbers.netlify.app](https://counter-numbers.netlify.app/)
- - [quiz-app-html-js.netlify.app] (https://quiz-app-html-js.netlify.app/)
+ - [quiz-app-html-js.netlify.app](https://quiz-app-html-js.netlify.app/)
