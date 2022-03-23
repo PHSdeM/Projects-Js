@@ -6,9 +6,9 @@ const container = document.querySelector('.list-container')
 const list = document.querySelector('.shopping-list')
 const clearBtn = document.querySelector('.btn-clear')
 
-let editElement;
-let editFlag = false;
-let editId = '';
+let editElement
+let editFlag = false
+let editId = ''
 
 form.addEventListener('submit', addItem)
 
@@ -49,14 +49,15 @@ function addItem(e){
         container.classList.add('show-container')
         addToLocalStorage(id, value)
 
-        setBackToDefault();
+        setBackToDefault()
     }else if(value!=="" && editFlag){
         editElement.innerHTML = value
         displayMessage('value changed', 'sucess')
 
         editLocalStorage(editId, value)
         setBackToDefault()
-    }else {
+    }
+    else {
         displayMessage('please enter value', 'danger')
     }
 }
@@ -112,10 +113,10 @@ function editItem(e) {
 }
 
 function setBackToDefault() {
-    listShopping.value = ''
+    listShopping.value = ""
     editFlag = false
-    editId = ''
-    submitBtn.textContent = 'submit'
+    editId = ""
+    submitBtn.textContent = "submit"
 }
 
 function addToLocalStorage(id, value) {
